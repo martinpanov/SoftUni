@@ -20,20 +20,40 @@ body {
 }
 
 .card {
+    display: block;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.viewport:first-child .card img {
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.card::before {
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.viewport:first-of-type .card {
     height: 180px;
     width: 300px;
 }
 
-.card img {
+.viewport:last-of-type .card {
     height: 450px;
     width: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .fa-link {
