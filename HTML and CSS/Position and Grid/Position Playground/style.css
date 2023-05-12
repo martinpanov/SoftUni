@@ -1,0 +1,52 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+body {
+    margin: 0px;
+}
+
+.viewport {
+    position: relative;
+    height: 50vh;
+}
+
+.viewport:first-of-type {
+    background: rgb(0, 210, 177);
+    background: linear-gradient(270deg, rgba(0, 210, 177, 1) 0%, rgba(6, 108, 204, 1) 100%);
+}
+
+.viewport:last-of-type {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.viewport:first-child .card img {
+    height: 180px;
+    width: 300px;
+}
+
+.card img {
+    height: 450px;
+    width: 300px;
+}
+
+.fa-link {
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+    transform: rotate(170deg);
+}
+
+.fa-star {
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    right: 10px;
+}
