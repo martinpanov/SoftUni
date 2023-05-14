@@ -1,0 +1,123 @@
+body {
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+    padding: 24px 144px;
+}
+
+h1,
+h2,
+h3,
+blockquote {
+    font-family: Georgia, serif;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 1em/1.2em;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 102, 0);
+}
+
+body>header {
+    position: relative;
+    border-bottom: 2px solid black;
+}
+
+.site-title {
+    font-size: 38px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+body>header nav {
+    position: absolute;
+    right: 0;
+    bottom: 22px;
+}
+
+body>header ul {
+    list-style: none;
+}
+
+body>header nav,
+body>header li,
+.site-title,
+main,
+aside,
+.blockquote-p p,
+.blockquote-p blockquote {
+    display: inline-block;
+}
+
+body>header li:not(:first-child) {
+    margin-left: 12px;
+}
+
+main {
+    margin-top: 16px;
+    width: 70%;
+}
+
+aside {
+    margin-top: 6px;
+    width: 22%;
+    vertical-align: top;
+    margin-left: 84px;
+}
+
+main>article>header {
+    margin-bottom: 52px;
+}
+
+.first-image,
+.second-image {
+    padding: 10px;
+    border: 2.5px solid black;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    background-color: rgb(255, 255, 255);
+}
+
+.first-image {
+    float: right;
+    height: 230px;
+    width: 150px;
+    margin: 0px 0px 16px 16px;
+}
+
+.second-image {
+    float: left;
+    height: 110px;
+    width: 160px;
+    margin: 0px 16px 20px 0px;
+}
+
+.blockquote-p p {
+    width: 49%;
+    padding-right: 20px;
+    border-right: 2px solid lightgrey;
+}
+
+.blockquote-p blockquote {
+    color: grey;
+    width: 46%;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.blockquote-p blockquote span {
+    color: grey;
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+}
