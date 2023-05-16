@@ -1,0 +1,36 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+header h1 {
+    text-transform: uppercase;
+    margin-left: 24px;
+}
+
+main {
+    padding: 24px;
+    margin-bottom: auto;
+}
+
+main h2 {
+    font-weight: 400;
+}
+
+footer {
+    color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);
+    padding: 14px 24px;
+}
