@@ -1,0 +1,76 @@
+:root {
+    --purple: #68347b;
+    --white: #fcfcfc;
+    --grey: #fdfdfd;
+}
+
+body {
+    background-color: var(--white);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+}
+
+header .logo h2 {
+    color: var(--purple);
+    font-size: 1.75rem;
+}
+
+header .logo p {
+    font-size: 0.45rem;
+    text-transform: uppercase;
+    transform: scaleY(2);
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+header .menu span {
+    font-size: 0.75rem;
+}
+
+header .navigation {
+    display: none;
+}
+
+#hero {
+    padding: 2.25rem 1.25rem;
+}
+
+#hero .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#hero .hero-text h1 {
+    font-size: 1.75rem;
+}
+
+#hero .hero-text p {
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+#hero .hero-text button {
+    background: transparent;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.6rem;
+}
+
+#hero .fa-earth-americas {
+    font-size: 7rem;
+}
+
+footer {
+    background-color: var(--grey);
+}
