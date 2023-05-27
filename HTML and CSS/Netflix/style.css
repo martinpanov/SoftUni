@@ -1,3 +1,5 @@
+/* General styling */
+
 :root {
     --red: #e50914;
     --dark-grey: #303030;
@@ -17,6 +19,8 @@ body {
     border-radius: 2px;
 }
 
+/* Header */
+
 header {
     position: fixed;
     top: 0;
@@ -31,12 +35,15 @@ header {
     padding: 0 1rem;
 }
 
+/* Hero section */
+
 #hero {
     height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0.25rem;
 }
 
 #hero::before {
@@ -73,9 +80,14 @@ header {
     font-weight: normal;
 }
 
+#hero form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 #hero form input {
-    display: block;
-    margin: 0 auto 0.75rem auto;
     padding: 0.5rem;
     border: none;
     border-radius: 2px;
@@ -92,4 +104,31 @@ header {
 
 #hero .hero-content p:last-child {
     font-size: 0.8rem;
+}
+
+/* Main page sections */
+
+.page-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black);
+    gap: 10px;
+    margin-bottom: 0.25rem;
+    padding: 2rem 0.75rem;
+}
+
+.page-section .information {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    color: var(--white);
+}
+
+.page-section .information h2 {
+    font-size: 1.25rem;
+}
+
+.page-section .information p {
+    font-size: 0.75rem;
 }
