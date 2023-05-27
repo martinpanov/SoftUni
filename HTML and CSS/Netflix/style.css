@@ -134,6 +134,7 @@ header {
     color: var(--white);
     text-align: center;
     padding: 2.5rem 0rem;
+    margin-bottom: 0.25rem;
 }
 
 #faq .faq-section-wrapper {
@@ -172,4 +173,33 @@ header {
 
 #faq .faq-form-btn {
     padding: 0.35rem 1rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--black);
+    color: var(--dark-grey);
+    padding: 2.75rem 2.5rem;
+}
+
+footer h2 {
+    font-size: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    columns: 2;
+    padding: 0;
+}
+
+footer h3,
+footer a {
+    font-size: 0.75rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--dark-grey);
+    font-weight: bold;
 }
