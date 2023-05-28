@@ -106,12 +106,17 @@ header {
 
 /* Main page sections */
 
+.page-section {
+    display: flex;
+    justify-content: center;
+    background-color: var(--black);
+    margin-bottom: 0.25rem;
+}
+
 .page-section .wrapper {
     display: flex;
     flex-direction: column;
-    background-color: var(--black);
     gap: 10px;
-    margin-bottom: 0.25rem;
     padding: 2rem 0.75rem;
 }
 
@@ -202,4 +207,156 @@ footer a {
     text-decoration: none;
     color: var(--dark-grey);
     font-weight: bold;
+}
+
+@media (min-width: 768px) {
+
+    /* Header */
+    header {
+        padding: 3rem 2rem;
+    }
+
+    header .btn {
+        padding: 0.25rem 0.75rem;
+    }
+
+    /* Hero */
+
+    #hero .hero-content {
+        max-width: 700px;
+    }
+
+    #hero .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    #hero form,
+    #faq form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #hero form input {
+        padding: 1rem 0.5rem;
+        width: 60%;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+    }
+
+    #hero form .form-btn {
+        padding: 1rem 0rem;
+        font-size: 1.5rem;
+        width: 40%;
+    }
+
+    #hero .hero-content p:last-child {
+        font-size: 1rem;
+    }
+
+    /* Main page sections */
+
+    .page-section .wrapper {
+        flex-direction: row;
+        padding: 2rem 1.5rem;
+    }
+
+    .page-section:nth-child(odd) .wrapper {
+        flex-direction: row-reverse;
+    }
+
+    .page-section .information {
+        justify-content: center;
+        text-align: left;
+        width: 50%;
+    }
+
+    .page-section .title {
+        font-size: 2rem;
+    }
+
+    .page-section .information p {
+        font-size: 1rem;
+    }
+
+    .page-section .wrapper img {
+        width: 50%;
+    }
+
+    /* FAQ */
+
+    #faq .faq-section-wrapper {
+        margin: 0 auto;
+        max-width: 700px;
+        gap: 60px;
+    }
+
+    #faq .faq-wrapper-questions .faq-btn {
+        padding: 1rem 1.25rem;
+    }
+
+    #faq form input {
+        width: 60%;
+        padding: 1rem 0.25rem;
+        margin: 0;
+    }
+
+    #faq .faq-form-btn {
+        padding: 0.75rem 0rem;
+        font-size: 1.5rem;
+        width: 40%;
+    }
+
+    /* Footer */
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer ul {
+        columns: 4;
+    }
+
+    footer .footer-wrapper {
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .btn {
+        cursor: pointer;
+    }
+
+    /* Hero */
+    #hero .hero-content {
+        max-width: 800px;
+    }
+
+    #hero .hero-content h1 {
+        font-size: 4rem;
+    }
+
+    #hero .hero-content h2 {
+        font-size: 1.75rem;
+    }
+
+    #hero form input {
+        width: 65%;
+    }
+
+    #hero form .form-btn {
+        width: 35%;
+    }
+
+    /* Main page sections */
+
+    .page-section .wrapper {
+        max-width: 1000px;
+    }
 }
