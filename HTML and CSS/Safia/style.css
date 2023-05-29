@@ -1,3 +1,4 @@
+/* General Styling */
 :root {
     --dark-blue: #070e27;
     --light-dark-blue: #162044;
@@ -16,7 +17,25 @@ body {
 }
 
 .btn {
-    all: unset
+    all: unset;
+    color: var(--white);
+}
+
+.section-title {
+    font-size: 3.5rem;
+}
+
+.title {
+    color: var(--white);
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+}
+
+.subtitle {
+    color: var(--grey);
+    font-weight: normal;
 }
 
 /* Header */
@@ -49,18 +68,12 @@ header .btn.burger-button {
     padding: 4rem 0.75rem 0rem 0.75rem;
 }
 
-#hero h1 {
+#hero .section-title {
     line-height: 1.2;
-    color: var(--white);
-    font-size: 3.5rem;
     margin-bottom: 1rem;
 }
 
-#hero .hero-info h2 {
-    line-height: 1.5;
-    color: var(--grey);
-    font-weight: 400;
-    font-size: 1.25rem;
+#hero .hero-info .section-subtitle {
     margin-bottom: 2.5rem;
 }
 
@@ -93,16 +106,8 @@ header .btn.burger-button {
     padding: 4rem 0.75rem;
 }
 
-#features .section-title {
-    font-size: 3.5rem;
-    color: var(--white);
-}
-
 #features .section-subtitle {
-    font-size: 1.25rem;
-    color: var(--grey);
     margin-bottom: 3.5rem;
-    font-weight: normal;
 }
 
 #features .features-links {
@@ -131,4 +136,36 @@ header .btn.burger-button {
 
 #features .feature-paragraph {
     color: var(--grey);
+}
+
+/* Ready To Start Section */
+
+#ready-to-start {
+    padding: 4rem 0.75rem;
+}
+
+#ready-to-start .trial-wrapper {
+    text-align: center;
+    padding: 3rem 4.75rem;
+    background-color: var(--blue);
+    border-radius: 24px;
+}
+
+#ready-to-start .subtitle {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    opacity: 0.6;
+    margin-bottom: 0.5rem;
+}
+
+#ready-to-start .title {
+    font-size: 2.25rem;
+    line-height: 1.25;
+    margin-bottom: 2rem;
+}
+
+#ready-to-start .btn {
+    padding: 1.25rem 1.5rem;
+    background-color: var(--light-blue);
+    border-radius: 10px;
 }
