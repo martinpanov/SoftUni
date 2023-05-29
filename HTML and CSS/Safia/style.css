@@ -2,6 +2,7 @@
 :root {
     --dark-blue: #070e27;
     --light-dark-blue: #162044;
+    --plan-background: #081131;
     --blue: #0059f7;
     --light-blue: #689eff;
     --grey-blue: #162044;
@@ -36,6 +37,14 @@ body {
 .subtitle {
     color: var(--grey);
     font-weight: normal;
+}
+
+span.subtitle,
+.plan-type {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 0.25rem;
 }
 
 /* Header */
@@ -103,7 +112,7 @@ header .btn.burger-button {
 /* Features section */
 
 #features .features-wrapper {
-    padding: 4rem 0.75rem;
+    padding: 3rem 0.75rem;
 }
 
 #features .section-subtitle {
@@ -151,13 +160,6 @@ header .btn.burger-button {
     border-radius: 24px;
 }
 
-#ready-to-start .subtitle {
-    text-transform: uppercase;
-    font-size: 1.25rem;
-    opacity: 0.6;
-    margin-bottom: 0.5rem;
-}
-
 #ready-to-start .title {
     font-size: 2.25rem;
     line-height: 1.25;
@@ -192,7 +194,7 @@ header .btn.burger-button {
     line-height: 1.25;
 }
 
-#how-does-it-work .how-does-it-work-container {
+#how-does-it-work .how-does-it-work-container:not(:last-child) {
     margin-bottom: 8rem;
 }
 
@@ -210,4 +212,77 @@ header .btn.burger-button {
     font-size: 1.25rem;
     color: var(--grey);
     opacity: 0.6;
+}
+
+/* Pricing section */
+
+#pricing {
+    padding: 4rem 0.75rem;
+}
+
+#pricing .titles {
+    text-align: center;
+    margin-bottom: 5.5rem;
+}
+
+#pricing .plans {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+#pricing .plan {
+    padding: 1.75rem 2rem;
+    background-color: var(--plan-background);
+    border-radius: 20px;
+}
+
+#pricing .plan:nth-child(2) {
+    background-color: var(--light-dark-blue);
+}
+
+#pricing .price-container {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--icon-color);
+}
+
+#pricing .plan-type {
+    color: var(--grey);
+}
+
+#pricing .price span {
+    font-size: 3.5rem;
+    color: var(--icon-color);
+    opacity: 0.6;
+}
+
+#pricing .price {
+    font-size: 3.5rem;
+    color: var(--white);
+}
+
+#pricing .plan-features {
+    list-style: none;
+    padding: 2rem 0rem;
+}
+
+#pricing .plan-features li {
+    font-size: 1rem;
+    color: var(--grey);
+    margin-bottom: 1rem;
+}
+
+#pricing .fa-circle-check {
+    color: var(--icon-color);
+    opacity: 0.6;
+}
+
+#pricing .btn {
+    background-color: #4e5a85;
+    padding: 1.25rem 2rem;
+    border-radius: 8px;
+}
+
+#pricing .plan:nth-child(2) .btn {
+    background-color: var(--blue);
 }
