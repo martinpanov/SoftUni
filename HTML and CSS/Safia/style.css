@@ -119,7 +119,7 @@ header .btn.burger-button {
     text-decoration: none;
     padding: 2.25rem 2rem;
     border: 1px solid var(--borders);
-    border-radius: 10px;
+    border-radius: 18px;
 }
 
 #features .icon {
@@ -168,4 +168,46 @@ header .btn.burger-button {
     padding: 1.25rem 1.5rem;
     background-color: var(--light-blue);
     border-radius: 10px;
+}
+
+/* How does it work section */
+
+#how-does-it-work {
+    padding: 4rem 0.75rem;
+}
+
+#how-does-it-work .how-does-it-work-titles {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+#how-does-it-work span.subtitle {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 0.25rem;
+}
+
+#how-does-it-work .section-title {
+    line-height: 1.25;
+}
+
+#how-does-it-work .how-does-it-work-container {
+    margin-bottom: 8rem;
+}
+
+#how-does-it-work .how-does-it-work-container img {
+    margin-bottom: 4rem;
+}
+
+#how-does-it-work .how-does-it-work-title {
+    font-size: 2.25rem;
+    line-height: 1.25;
+    margin-bottom: 1.25rem;
+}
+
+#how-does-it-work .how-does-it-work-paragraph {
+    font-size: 1.25rem;
+    color: var(--grey);
+    opacity: 0.6;
 }
