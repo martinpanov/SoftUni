@@ -1,11 +1,10 @@
 /* General Styling */
 :root {
-    --dark-blue: #070e27;
-    --light-dark-blue: #162044;
+    --black-pearl: #070e27;
+    --big-stone: #162044;
     --plan-background: #081131;
-    --blue: #0059f7;
-    --light-blue: #689eff;
-    --grey-blue: #162044;
+    --buttons-blue: #0059f7;
+    --buttons-light-blue: #689eff;
     --grey: #ccd2e9;
     --white: #ffffff;
     --borders: hsla(0, 0%, 100%, 0.1);
@@ -13,7 +12,7 @@
 }
 
 body {
-    background-color: var(--dark-blue);
+    background-color: var(--black-pearl);
     font-family: 'Sora', sans-serif;
 }
 
@@ -64,7 +63,7 @@ header .header-btns {
 }
 
 header .btn.burger-button {
-    background-color: var(--light-dark-blue);
+    background-color: var(--big-stone);
     color: var(--white);
     padding: 1.25rem 1.5rem;
     border-radius: 10px;
@@ -88,7 +87,7 @@ header .btn.burger-button {
 
 #hero .hero-info .hero-btn {
     padding: 1rem 1.5rem;
-    background-color: var(--blue);
+    background-color: var(--buttons-blue);
     color: var(--white);
     border-radius: 10px;
     font-size: 1rem;
@@ -149,26 +148,33 @@ header .btn.burger-button {
 
 /* Ready To Start Section */
 
-#ready-to-start {
+.ready-to-start {
     padding: 4rem 0.75rem;
 }
 
-#ready-to-start .trial-wrapper {
+.ready-to-start .trial-wrapper {
     text-align: center;
-    padding: 3rem 4.75rem;
-    background-color: var(--blue);
+    padding: 3rem 3rem;
+    background-color: var(--buttons-blue);
     border-radius: 24px;
 }
 
-#ready-to-start .title {
+.ready-to-start .subtitle {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    opacity: 0.6;
+}
+
+.ready-to-start .title {
     font-size: 2.25rem;
     line-height: 1.25;
     margin-bottom: 2rem;
 }
 
-#ready-to-start .btn {
+.ready-to-start .btn {
     padding: 1.25rem 1.5rem;
-    background-color: var(--light-blue);
+    background-color: var(--buttons-light-blue);
     border-radius: 10px;
 }
 
@@ -238,7 +244,7 @@ header .btn.burger-button {
 }
 
 #pricing .plan:nth-child(2) {
-    background-color: var(--light-dark-blue);
+    background-color: var(--big-stone);
 }
 
 #pricing .price-container {
@@ -263,7 +269,7 @@ header .btn.burger-button {
 
 #pricing .plan-features {
     list-style: none;
-    padding: 2rem 0rem;
+    padding: 2.75rem 0rem;
 }
 
 #pricing .plan-features li {
@@ -284,5 +290,57 @@ header .btn.burger-button {
 }
 
 #pricing .plan:nth-child(2) .btn {
-    background-color: var(--blue);
+    background-color: var(--buttons-blue);
+}
+
+/* Ready To Start second section */
+
+.ready-to-start~.ready-to-start .trial-wrapper {
+    padding: 2.25rem 0.75rem;
+}
+
+.ready-to-start~.ready-to-start .title {
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--big-stone);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .wrapper {
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+}
+
+footer .social-media {
+    gap: 36px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+footer i {
+    font-size: 1.15rem;
+}
+
+footer .wrapper>a {
+    text-align: center;
 }
