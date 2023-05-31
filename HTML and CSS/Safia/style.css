@@ -52,10 +52,11 @@ header {
     border-bottom: 1px solid var(--borders);
 }
 
-header .nav-wrapper {
+header .wrapper {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 1.25rem 0.75rem;
+    padding: 1.25rem 3%;
 }
 
 header .header-btns {
@@ -71,9 +72,13 @@ header .btn.burger-button {
 
 /* Hero */
 
-#hero .hero-wrapper {
+#hero .wrapper {
     text-align: center;
-    padding: 4rem 0.75rem 0rem 0.75rem;
+    padding: 4rem 3% 0rem 3%;
+}
+
+#hero .hero-info {
+    margin-bottom: 4.5rem;
 }
 
 #hero .section-title {
@@ -81,21 +86,21 @@ header .btn.burger-button {
     margin-bottom: 1rem;
 }
 
-#hero .hero-info .section-subtitle {
+#hero .section-subtitle {
     margin-bottom: 2.5rem;
 }
 
-#hero .hero-info .hero-btn {
+#hero .hero-btn {
     padding: 1rem 1.5rem;
     background-color: var(--buttons-blue);
     color: var(--white);
     border-radius: 10px;
     font-size: 1rem;
-    margin-bottom: 4.5rem;
 }
 
 #hero .hero-img {
     margin-bottom: 5rem;
+    width: 100%;
 }
 
 #hero .hero-images {
@@ -103,6 +108,7 @@ header .btn.burger-button {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     grid-row-gap: 60px;
+    width: 100%;
     text-align: center;
     padding-bottom: 4rem;
     border-bottom: 1px solid var(--borders);
@@ -110,8 +116,8 @@ header .btn.burger-button {
 
 /* Features section */
 
-#features .features-wrapper {
-    padding: 3rem 0.75rem;
+#features .wrapper {
+    padding: 3rem 3%;
 }
 
 #features .section-subtitle {
@@ -152,7 +158,7 @@ header .btn.burger-button {
     padding: 4rem 0.75rem;
 }
 
-.ready-to-start .trial-wrapper {
+.ready-to-start .wrapper {
     text-align: center;
     padding: 3rem 3rem;
     background-color: var(--buttons-blue);
@@ -187,6 +193,7 @@ header .btn.burger-button {
 #how-does-it-work .how-does-it-work-titles {
     text-align: center;
     margin-bottom: 6rem;
+    width: 100%;
 }
 
 #how-does-it-work span.subtitle {
@@ -241,6 +248,7 @@ header .btn.burger-button {
     padding: 1.75rem 2rem;
     background-color: var(--plan-background);
     border-radius: 20px;
+    width: 100%;
 }
 
 #pricing .plan:nth-child(2) {
@@ -295,8 +303,9 @@ header .btn.burger-button {
 
 /* Ready To Start second section */
 
-.ready-to-start~.ready-to-start .trial-wrapper {
-    padding: 2.25rem 0.75rem;
+.ready-to-start~.ready-to-start .wrapper {
+    padding: 2.25rem 3%;
+    width: 100%;
 }
 
 .ready-to-start~.ready-to-start .title {
@@ -319,6 +328,7 @@ footer .wrapper {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    width: 100%;
 }
 
 footer ul {
@@ -326,6 +336,7 @@ footer ul {
     justify-content: center;
     gap: 24px;
     list-style: none;
+    text-align: center;
 }
 
 footer .social-media {
@@ -343,4 +354,212 @@ footer i {
 
 footer .wrapper>a {
     text-align: center;
+}
+
+
+@media (min-width: 480px) {
+    /* Hero section */
+
+    #hero .hero-images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Features section */
+
+    #features .features-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* How does it work section */
+
+    #how-does-it-work .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #how-does-it-work .how-does-it-work-titles {
+        max-width: 536px;
+    }
+
+    /* Pricing section */
+
+    #pricing .plans {
+        justify-items: center;
+    }
+
+    #pricing .plan {
+        max-width: 480px;
+        padding: 3rem 3.5rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    /* Header */
+
+    header .btn.burger-button {
+        display: none;
+    }
+
+    header .header-btns {
+        display: flex;
+        gap: 10px;
+        font-size: 0.85rem;
+    }
+
+    header .header-btns .btn {
+        padding: 1rem 1.25rem;
+    }
+
+    header .light-color-btn {
+        background-color: var(--big-stone);
+        border-radius: 10px;
+    }
+
+    /* Hero section */
+
+    #hero .hero-images {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    /* Features section */
+
+    #features .wrapper,
+    .ready-to-start .wrapper {
+        margin: 0 auto;
+        max-width: 920px;
+    }
+
+    #features .feature-link {
+        max-width: 410px;
+    }
+
+    /* How does it work section */
+
+    #how-does-it-work {
+        padding: 4rem 1.75rem;
+    }
+
+    #how-does-it-work .how-does-it-work-container {
+        display: flex;
+        gap: 60px;
+    }
+
+    #how-does-it-work .how-does-it-work-container img {
+        width: 50%;
+        margin-bottom: 0rem;
+    }
+
+    #how-does-it-work .how-does-it-work-container-info {
+        width: 50%;
+    }
+
+    #how-does-it-work .how-does-it-work-container:nth-child(odd) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    /* Ready To Start second section */
+
+    .ready-to-start~.ready-to-start .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3.25rem 3.25rem;
+    }
+
+    .ready-to-start~.ready-to-start .info {
+        text-align: left;
+    }
+
+    .ready-to-start~.ready-to-start .title {
+        margin-bottom: 0rem;
+    }
+
+    footer .wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 990px) {
+    /* General styling */
+
+    header .wrapper,
+    #how-does-it-work .wrapper,
+    #pricing .plans,
+    .ready-to-start~.ready-to-start .wrapper {
+        margin: 0 auto;
+    }
+
+    #hero .hero-info,
+    #hero .hero-images,
+    #how-does-it-work .wrapper,
+    .ready-to-start~.ready-to-start .wrapper,
+    footer .wrapper {
+        max-width: 1100px;
+    }
+
+    /* Header */
+
+    header .wrapper {
+        margin: 0 auto;
+        max-width: 1340px;
+    }
+
+    /* Hero */
+
+    #hero .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero .hero-info {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    #hero .section-title {
+        max-width: 40%;
+    }
+
+    #hero .hero-info-and-button {
+        max-width: 40%;
+    }
+
+    #hero .hero-img {
+        max-width: 1300px;
+    }
+
+    /* How does it work section */
+
+    #how-does-it-work .wrapper {
+        margin: 0 auto;
+    }
+
+    #how-does-it-work .how-does-it-work-container-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Pricing section */
+
+    #pricing .titles {
+        margin-bottom: 9.5rem;
+    }
+
+    #pricing .plans {
+        margin: 0 auto;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1300px;
+    }
+
+    #pricing .plan:nth-child(2) {
+        transform: translateY(-70px);
+    }
 }
