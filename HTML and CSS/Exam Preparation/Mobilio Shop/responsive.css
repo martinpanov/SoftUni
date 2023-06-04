@@ -1,0 +1,86 @@
+@media (max-width: 600px) {
+
+    /* Header */
+    .home-header {
+        padding-left: 12px;
+    }
+
+    .home-left,
+    .home-right,
+    .home-container01 {
+        display: none;
+    }
+
+    .home-navbar1 .navbar-logo-title {
+        margin: 0;
+    }
+
+    /* Hero section */
+
+    .home-hero .home-hero1 {
+        flex-direction: column;
+    }
+
+    .home-hero .home-info,
+    .home-hero .home-container04,
+    .home-hero .home-btn-group {
+        justify-content: center;
+    }
+
+    /* Grid section */
+
+    .section-container .max-width-container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .section-container .home-cards-container {
+        grid-gap: 18px
+    }
+
+    .section-container .category-card-image {
+        height: 190px;
+        width: 174px;
+    }
+
+    /* LookBooks section */
+
+    .home-full-width-banner {
+        flex-direction: column;
+    }
+
+    .home-full-width-banner .home-left4 {
+        padding: 32px 0px;
+    }
+
+    .home-full-width-banner .home-content {
+        margin-bottom: 20px;
+    }
+
+    .home-full-width-banner .home-text30 {
+        width: 100%
+    }
+
+    .home-full-width-banner .home-image6 {
+        width: 100%;
+    }
+
+    /* Blog section */
+
+    .blog-post-card-blog-post-card {
+        max-width: 100%;
+    }
+
+    /* Footer */
+
+    .home-footer1 {
+        flex-direction: column-reverse;
+        padding-top: 50px;
+        padding-bottom: 14px;
+    }
+
+    .home-links-container {
+        flex-direction: column;
+    }
+
+}
