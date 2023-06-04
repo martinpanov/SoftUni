@@ -1,0 +1,56 @@
+:root {
+    --red: #d01919;
+    --white: #ffffff;
+    --grey: #efefef;
+    --black: black;
+}
+
+html {
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Header */
+
+header {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+/* Hero */
+
+#hero {
+    color: var(--white);
+}
+
+.btn {
+    all: unset;
+    background-color: var(--red);
+    color: var(--white);
+}
+
+/* Welcome */
+
+#welcome {
+    background-color: var(--white);
+}
+
+#welcome .perk-heading {
+    color: var(--red);
+}
+
+/* Coaches */
+
+#coaches-section {
+    background-color: var(--grey);
+}
+
+#coaches-section .coach-specialty {
+    color: var(--red);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--red);
+    color: var(--black);
+}
