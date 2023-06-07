@@ -1,0 +1,68 @@
+/* General styling */
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    padding: 2rem;
+}
+
+.section {
+    background-color: #efefef;
+}
+
+.section:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+p {
+    font-style: italic;
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.vl {
+    border-left: 1px solid black;
+    width: 0px;
+    height: 70px;
+}
+
+/* Header */
+
+#photographer-section {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "content img img img";
+    padding: 1.5rem 1.5rem 0rem 4rem;
+}
+
+#photographer-section header {
+    grid-area: header;
+    text-align: right;
+}
+
+#photographer-section .content {
+    grid-area: content;
+    padding: 5rem 0rem 6rem 0rem;
+}
+
+#photographer-section img {
+    grid-area: img;
+}
+
+#photographer-section h1 {
+    margin-bottom: 1.5rem;
+}
+
+#photographer-section p {
+    margin-bottom: 2rem;
+}
