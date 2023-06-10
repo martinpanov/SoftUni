@@ -1,0 +1,241 @@
+:root {
+    --black: #2c383b;
+    --light-black: #383838;
+    --orange: #e24e2a;
+    --green: #1b9772;
+    --grey: #ececec;
+    --white: white;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 2rem;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-main-heading {
+    color: var(--black);
+}
+
+header .vl {
+    border-right: 1px solid var(--black);
+    height: 2.25rem;
+    margin: 0rem 0.75rem;
+}
+
+header .logo-subheading {
+    margin-top: 0.75rem;
+    font-size: 0.75rem;
+    font-weight: normal;
+}
+
+header .logo-subheading span {
+    color: var(--black);
+    font-weight: 500;
+}
+
+header .navigation ul {
+    display: flex;
+    gap: 2px;
+}
+
+header .navigation li {
+    padding: 1rem;
+}
+
+header .navigation li:first-child {
+    background-color: var(--orange);
+}
+
+header .navigation li:not(:first-child) {
+    background-color: var(--grey);
+}
+
+header .navigation li:first-child a {
+    color: var(--white);
+}
+
+header .navigation a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* Hero */
+
+#hero {
+    height: calc(100vh - 96px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero .hero {
+    overflow: hidden;
+}
+
+#hero .hero-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#hero .hero-info-wrapper {
+    background-color: var(--orange);
+    padding: 5rem 10rem;
+}
+
+#hero .hero-info {
+    margin: 0 auto;
+    max-width: 1100px;
+    text-align: center;
+    color: var(--white);
+    opacity: 0.8;
+}
+
+#hero .hero-info span {
+    text-decoration: underline;
+}
+
+/* Icon cards section */
+
+#icon-cards-section {
+    background-color: var(--light-black);
+}
+
+#icon-cards-section .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10rem 3rem;
+}
+
+#icon-cards-section .card {
+    text-align: center;
+}
+
+#icon-cards-section i {
+    padding: 2rem;
+    font-size: 5rem;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+#icon-cards-section .card:first-child .card-heading {
+    margin: 1.25rem 0rem;
+}
+
+#icon-cards-section .card-heading {
+    margin: 0.75rem 0rem;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#icon-cards-section hr {
+    margin: 2rem 0rem;
+    opacity: 0.2;
+}
+
+#icon-cards-section .card-text {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    max-width: 400px;
+    color: var(--white);
+    opacity: 0.2;
+}
+
+/* Sign Up section */
+#sign-up-section {
+    padding: 7rem 0rem;
+}
+
+#sign-up-section .sign-up {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#sign-up-section .sign-up-heading {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--light-black);
+    line-height: 1.2;
+}
+
+#sign-up-section .sign-up-subheading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--light-black);
+    opacity: 0.4;
+    margin-bottom: 2rem;
+}
+
+#sign-up-section .sign-up-button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--white);
+    background-color: var(--green);
+    border: none;
+    padding: 1.5rem 4.5rem;
+}
+
+/* Features section */
+
+#features-section {
+    background-color: var(--light-black);
+}
+
+#features-section .features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 10rem 3rem;
+}
+
+
+#features-section .feature {
+    text-align: center;
+}
+
+#features-section .feature-heading {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 5rem;
+}
+
+#features-section .feature-text {
+    font-size: 1.35rem;
+    color: var(--white);
+    opacity: 0.3;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--green);
+    padding: 7rem 0rem;
+    text-align: center;
+}
+
+footer .footer-text {
+    color: var(--white);
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+footer .footer-text span {
+    color: rgba(255, 255, 255, 0.7);
+}
