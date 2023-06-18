@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    gap: 40px;
+    background-color: #d9d9d9;
+    font-family: Inter;
+    padding: 76px 130px 76px 76px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid black;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 600px;
+    height: 770px;
+}
+
+.card .card-img {
+    width: 100%;
+    height: 40%;
+}
+
+.card .card-content {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 34px;
+}
+
+.card .card-text h2 {
+    font-size: 20px;
+    color: #595959;
+}
+
+.card .card-text h3 {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.card .card-text p {
+    font-size: 20px;
+    line-height: 1.1;
+    color: #595959;
+}
+
+
+.card .card-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .profile-info h4 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.card .card-profile-img-wrapper {
+    width: 60px;
+    height: 60px;
+}
+
+.card .card-profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.card span {
+    color: #999999;
+    font-size: 20px;
+}
